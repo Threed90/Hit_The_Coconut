@@ -8,6 +8,6 @@
 
 A simple and funny game, implemented via Windows Form App with C# <br>
 
-<img scr="/gameScreenshots/gameEntrySkin.png">
+<img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/gameScreenshots/gameEntrySkin.png">
 
 
