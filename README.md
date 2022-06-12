@@ -12,6 +12,7 @@ A simple and funny game, implemented via Windows Form App with C#. [Hit The Coco
 
 ## Game UI
 
-The [Hit The Coconut](https://github.com/Threed90/Hit_The_Coconut) game UI is very simple.
+The [Hit The Coconut](https://github.com/Threed90/Hit_The_Coconut) game UI design is just a system window without form border. 
+There are no options for minimazing or maximazing of it. When the game is started, display will pop up in the middle of your computer screen.
 
-<img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/gameScreenshots/gameEntrySkin.png" width="400">
+<img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/gameScreenshots/gameEntrySkin.png" width="600">
