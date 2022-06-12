@@ -7,7 +7,7 @@
 
 ---
 <div align="center">
-    <a href="# The class library project">The class library project</a>
+    <a href="#the-class-library-project">The class library project</a>
 </div>
 
 ---
