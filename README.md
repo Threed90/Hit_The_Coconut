@@ -58,7 +58,7 @@ The WFA project respond for the UI of the game and contains the business logic o
 ### The class library project
 ----
 
-It contains all objects of the game as interfaces, the fruit class hierarchy, score class. Also there are implemented repository class and fruit factory class.
+It contains all objects of the game as interfaces, the fruit class hierarchy, score class. Also here are implemented repository class and fruit factory class.
 
 ![class library project](/descriptionResources/classLibraryProject.png)
 
