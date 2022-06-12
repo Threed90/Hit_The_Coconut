@@ -13,6 +13,8 @@
     <a href="#software-infrastructure">Software Infrastructure</a> |
     <a href="#the-wfa-project">The WFA projectt</a> |
     <a href="#the-class-library-project">The class library project</a> |
+    <a href="#interfaces">Interfaces</a> |
+    <a href="#class-hierarchy">Class-hierarchy</a> |
     <a href="#game-rules">Game rules</a>
 </div>
 
@@ -88,7 +90,7 @@ It contains all objects of the game as interfaces, the fruit class hierarchy, sc
 There are few rules that has to be followed:
 1. Every single click on fruit will make this fruit to dissapear and will increase or descrease your score.
    
-   ![gather points](/descriptionResources/gatherPoints.gif)
+   ![gather points](/descriptionResources/gatherPoints.gif) 
 
 2. If you **miss to hit fruit** and just click somewhere on the game screen, you will decrease your score with five points (-5).
    
@@ -111,23 +113,19 @@ There are few rules that has to be followed:
     ![hitting coconuts](/descriptionResources/hitCoconuts.gif)
 
 ## Fruits and their points
+---
 
-![coconut](/HitTheCoconutGameSolution/HitTheCoconut/img/coconut.png) - negative ten points (-10)
+| Fruit name | Fruit icon | Points |
+|------------|------------|--------|
+| Coconut | <img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/HitTheCoconutGameSolution/HitTheCoconut/img/coconut.png" width="100"> | negative ten points (-10) |
+| Apricot | <img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/HitTheCoconutGameSolution/HitTheCoconut/img/coconut.png" width="100"> | one point (1) |
+| Blueberry | <img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/HitTheCoconutGameSolution/HitTheCoconut/img/blueberry.png" width="100"> | one point (1) |
+| Green Apple | <img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/HitTheCoconutGameSolution/HitTheCoconut/img/greenApple.png" width="100"> | one point (1) |
+| Mango | <img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/HitTheCoconutGameSolution/HitTheCoconut/img/mango.png" width="100"> | one point (1) |
+| Melon | <img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/HitTheCoconutGameSolution/HitTheCoconut/img/melon.png" width="100"> | one point (1) |
+| Peach | <img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/HitTheCoconutGameSolution/HitTheCoconut/img/peach.png" width="100"> | one point (1) |
+| Pomegranate | <img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/HitTheCoconutGameSolution/HitTheCoconut/img/pomegranate.png" width="100"> | one point (1) |
+| Raspberry | <img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/HitTheCoconutGameSolution/HitTheCoconut/img/raspberry.png" width="100"> | one point (1) |
+| Red Apple | <img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/HitTheCoconutGameSolution/HitTheCoconut/img/redApple.png" width="100"> | one point (1)|
 
-![apricot](/HitTheCoconutGameSolution/HitTheCoconut/img/apricot.png) - one point
-
-![blueberry](/HitTheCoconutGameSolution/HitTheCoconut/img/blueberry.png) - one point
-
-![green apple](/HitTheCoconutGameSolution/HitTheCoconut/img/greenApple.png) - one point
-
-![mango](/HitTheCoconutGameSolution/HitTheCoconut/img/mango.png) - one point
-
-![melon](/HitTheCoconutGameSolution/HitTheCoconut/img/melon.png) - one point
-
-![peach](/HitTheCoconutGameSolution/HitTheCoconut/img/peach.png) - one point
-
-![pomegranate](/HitTheCoconutGameSolution/HitTheCoconut/img/pomegranate.png) - one point
-
-![raspberry](/HitTheCoconutGameSolution/HitTheCoconut/img/raspberry.png) - one point
-
-![red apple](/HitTheCoconutGameSolution/HitTheCoconut/img/redApple.png) - one point
+---
