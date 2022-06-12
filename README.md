@@ -12,7 +12,8 @@
     <a href="#game-controllers">Game Controllers</a> |
     <a href="#software-infrastructure">Software Infrastructure</a> |
     <a href="#the-wfa-project">The WFA projectt</a> |
-    <a href="#the-class-library-project">The class library project</a>
+    <a href="#the-class-library-project">The class library project</a> |
+    <a href="#game-rules">Game rules</a>
 </div>
 
 ---
@@ -58,13 +59,37 @@ It contains all objects of the game as interfaces, the fruit class hierarchy, sc
 
 ![class library project](/descriptionResources/classLibraryProject.png)
 
+#### Interfaces
+-----
+
+![interfaces](/descriptionResources/interfaces.png)
+
+#### Class hierarchy
+-----
+
+1. Class hierarchy of fruits:
+   
+    ![class hierarchy of fruits](/descriptionResources/fruitClassHierarhy.png)
+
+2. A single class for game score:
+   
+    ![score class](/descriptionResources/scoreClass.png)
+
+3. A single class FruitFactory:
+
+    ![factory class](/descriptionResources/fruitFactoryClass.png)
+
+4. A single class FruitNamesRepository:
+
+    ![repository class](/descriptionResources/FruitNamesRepository.png)
+
 ## Game rules
 
 There are few rules that has to be followed:
 1. Every single click on fruit will make this fruit to dissapear and will increase or descrease your score.
    
    ![gather points](/descriptionResources/gatherPoints.gif)
-   
+
 2. If you **miss to hit fruit** and just click somewhere on the game screen, you will decrease your score with five points (-5).
    
    ![hitting screen](/descriptionResources/hitScreen.gif)
@@ -84,3 +109,25 @@ There are few rules that has to be followed:
 6. Every hitted **coconut will decrease your score with ten points** (-10).
 
     ![hitting coconuts](/descriptionResources/hitCoconuts.gif)
+
+## Fruits and their points
+
+![coconut](/HitTheCoconutGameSolution/HitTheCoconut/img/coconut.png) - negative ten points (-10)
+
+![apricot](/HitTheCoconutGameSolution/HitTheCoconut/img/apricot.png) - one point
+
+![blueberry](/HitTheCoconutGameSolution/HitTheCoconut/img/blueberry.png) - one point
+
+![green apple](/HitTheCoconutGameSolution/HitTheCoconut/img/greenApple.png) - one point
+
+![mango](/HitTheCoconutGameSolution/HitTheCoconut/img/mango.png) - one point
+
+![melon](/HitTheCoconutGameSolution/HitTheCoconut/img/melon.png) - one point
+
+![peach](/HitTheCoconutGameSolution/HitTheCoconut/img/peach.png) - one point
+
+![pomegranate](/HitTheCoconutGameSolution/HitTheCoconut/img/pomegranate.png) - one point
+
+![raspberry](/HitTheCoconutGameSolution/HitTheCoconut/img/raspberry.png) - one point
+
+![red apple](/HitTheCoconutGameSolution/HitTheCoconut/img/redApple.png) - one point
