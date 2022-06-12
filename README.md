@@ -51,7 +51,7 @@ The solution of the game contains two projects. The first one is class library a
 ### The WFA project
 ----
 
-The WFA project respond for the UI of the game and contains the buisness logic of the application as buttons functionality. There is also implemented the game logic.
+The WFA project respond for the UI of the game and contains the business logic of the application as buttons functionality. There is also implemented the game logic.
 
 ![WFA project](/descriptionResources/WFA_Project.png)
 
@@ -97,11 +97,11 @@ There are few rules that has to be followed:
    
    ![hitting screen](/descriptionResources/hitScreen.gif)
 
-3. If score goes over **negative hundred points** (-100) - the game is lost (game over).
+3. If score goes under **negative hundred points** (-100) - game over.
    
    ![game over with max negative score](/descriptionResources/gameOverNegativeScore.gif)
 
-4. If **the number of fruits is greater than 60** - the game is lost (game over).
+4. If **the number of fruits is greater than 60** - game over.
 
     ![game over with max fruit number](/descriptionResources/gameOverMaxFruits.gif)
 
