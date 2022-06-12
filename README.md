@@ -21,4 +21,4 @@ There are no options for minimazing or maximazing of it. When the game is starte
 
 There are *four buttons*, which actually have functionality to start, pause, restart and exit from the game.
 
-![controllers](/descriptionResources/controllers.mov)
+![controllers](/descriptionResources/controllers.gif)
