@@ -7,6 +7,11 @@
 
 ---
 <div align="center">
+    <a href="#game-intro">Game Intro</a> |
+    <a href="#game-ui">Game UI</a> |
+    <a href="#game-controllers">Game Controllers</a> |
+    <a href="#software-infrastructure">Software Infrastructure</a> |
+    <a href="#the-wfa-project">The WFA projectt</a> |
     <a href="#the-class-library-project">The class library project</a>
 </div>
 
@@ -52,3 +57,30 @@ The WFA project respond for the UI of the game and contains the buisness logic o
 It contains all objects of the game as interfaces, the fruit class hierarchy, score class. Also there are implemented repository class and fruit factory class.
 
 ![class library project](/descriptionResources/classLibraryProject.png)
+
+## Game rules
+
+There are few rules that has to be followed:
+1. Every single click on fruit will make this fruit to dissapear and will increase or descrease your score.
+   
+   ![gather points](/descriptionResources/gatherPoints.gif)
+   
+2. If you **miss to hit fruit** and just click somewhere on the game screen, you will decrease your score with five points (-5).
+   
+   ![hitting screen](/descriptionResources/hitScreen.gif)
+
+3. If score goes over **negative hundred points** (-100) - the game is lost (game over).
+   
+   ![game over with max negative score](/descriptionResources/gameOverNegativeScore.gif)
+
+4. If **the number of fruits is greater than 60** - the game is lost (game over).
+
+    ![game over with max fruit number](/descriptionResources/gameOverMaxFruits.gif)
+
+5. **Every fruit brings you one point** (1), expect the Coconut.
+   
+   ![fruits expect coconuts hitting](/descriptionResources/fitFruits.gif)
+
+6. Every hitted **coconut will decrease your score with ten points** (-10).
+
+    ![hitting coconuts](/descriptionResources/hitCoconuts.gif)
