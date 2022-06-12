@@ -7,10 +7,12 @@
 
 
 ## Game Intro
+---
 
 A simple and funny game, implemented via Windows Form App with C#. [Hit The Coconut](https://github.com/Threed90/Hit_The_Coconut) is a single player game. The player have to collect as many as possible points, following few rules.
 
 ## Game UI
+---
 
 The [Hit The Coconut](https://github.com/Threed90/Hit_The_Coconut) game UI design is just a system window without form border. 
 There are no options for minimazing or maximazing of it. When the game is started, its display will pop up in the middle of your computer screen.
@@ -18,7 +20,29 @@ There are no options for minimazing or maximazing of it. When the game is starte
 <img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/descriptionResources/gameEntrySkin.png" width="600">
 
 ## Game Controllers
+---
 
-There are *four buttons*, which actually have functionality to start, pause, restart and exit from the game.
+There are *four buttons*, which actually have functionality to start, pause, restart and exit from the game. Also there are the number of displayed fruits counter and total score counter.
 
 ![controllers](/descriptionResources/controllers.gif)
+
+## Software Infrastructure
+---
+
+The solution of the game contains two projects. The first one is class library and the second - windows form app (WFA).
+
+![Solution infrastructure](/descriptionResources/SolutionInfrastructure.png)
+
+### The WFA project
+----
+
+The WFA project respond for the UI of the game and contains the buisness logic of the application as buttons functionality. There is also implemented the game logic.
+
+![WFA project](/descriptionResources/WFA_Project.png)
+
+### The class library project
+----
+
+It contains all objects of the game as interfaces, the fruit class hierarchy, score class. Also there are implemented repository class and fruit factory class.
+
+![class library project](/descriptionResources/classLibraryProject.png)
