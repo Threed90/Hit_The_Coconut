@@ -15,7 +15,8 @@
     <a href="#the-class-library-project">The class library project</a> |
     <a href="#interfaces">Interfaces</a> |
     <a href="#class-hierarchy">Class-hierarchy</a> |
-    <a href="#game-rules">Game rules</a>
+    <a href="#game-rules">Game rules</a> |
+    <a href="#fruits-and-their-points">Fruits and their points</a>
 </div>
 
 ---
@@ -118,7 +119,7 @@ There are few rules that has to be followed:
 | Fruit name | Fruit icon | Points |
 |------------|------------|--------|
 | Coconut | <img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/HitTheCoconutGameSolution/HitTheCoconut/img/coconut.png" width="100"> | negative ten points (-10) |
-| Apricot | <img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/HitTheCoconutGameSolution/HitTheCoconut/img/coconut.png" width="100"> | one point (1) |
+| Apricot | <img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/HitTheCoconutGameSolution/HitTheCoconut/img/apricot.png" width="100"> | one point (1) |
 | Blueberry | <img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/HitTheCoconutGameSolution/HitTheCoconut/img/blueberry.png" width="100"> | one point (1) |
 | Green Apple | <img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/HitTheCoconutGameSolution/HitTheCoconut/img/greenApple.png" width="100"> | one point (1) |
 | Mango | <img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/HitTheCoconutGameSolution/HitTheCoconut/img/mango.png" width="100"> | one point (1) |
