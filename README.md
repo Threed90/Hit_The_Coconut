@@ -51,7 +51,7 @@ The solution of the game contains two projects. The first one is class library a
 ### The WFA project
 ----
 
-The WFA project respond for the UI of the game and contains the business logic of the application as buttons functionality. There is also implemented the game logic.
+The WFA project respond for the UI of the game and contains the business logic of the application as buttons functionality. Here is also implemented the game logic.
 
 ![WFA project](/descriptionResources/WFA_Project.png)
 
