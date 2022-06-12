@@ -101,7 +101,7 @@ There are few rules that has to be followed:
    
    ![game over with max negative score](/descriptionResources/gameOverNegativeScore.gif)
 
-4. If **the number of fruits is greater than 60** - game over.
+4. If **the number of fruits is equal or greater than 60** - game over.
 
     ![game over with max fruit number](/descriptionResources/gameOverMaxFruits.gif)
 
