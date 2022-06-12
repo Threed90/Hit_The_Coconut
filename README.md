@@ -3,11 +3,15 @@
 [![Visual Studio](https://img.shields.io/badge/Visual%20Studio-2022-brightgreen)](https://visualstudio.microsoft.com/)
 [![.NET](https://img.shields.io/badge/.NET-5.0-brightgreen)](https://dotnet.microsoft.com/)
 [![C#](https://img.shields.io/badge/C%23-9.0-green)](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9)
-[![WFAC#](https://img.shields.io/badge/Windows%20Form%20App-C%23-yellowgreen)](https://docs.microsoft.com/en-us/visualstudio/ide/create-csharp-winform-visual-studio?view=vs-2022) <br>
+[![WFAC#](https://img.shields.io/badge/Windows%20Form%20App-C%23-yellowgreen)](https://docs.microsoft.com/en-us/visualstudio/ide/create-csharp-winform-visual-studio?view=vs-2022)
 
 
-A simple and funny game, implemented via Windows Form App with C# <br>
+## Game Intro
 
-<img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/gameScreenshots/gameEntrySkin.png" width="120">
+A simple and funny game, implemented via Windows Form App with C#. [Hit The Coconut](https://github.com/Threed90/Hit_The_Coconut) is a single player game. The player have to collect as many as possible points, following few rules.
 
+## Game UI
 
+The [Hit The Coconut](https://github.com/Threed90/Hit_The_Coconut) game UI is very simple.
+
+<img src="https://github.com/Threed90/Hit_The_Coconut/blob/main/gameScreenshots/gameEntrySkin.png" width="400">
