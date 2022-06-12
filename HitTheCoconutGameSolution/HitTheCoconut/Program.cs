@@ -20,14 +20,15 @@ namespace HitTheCoconut
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
+            
             var path = "../../../img/background.jpg";
             Image background = new Bitmap(path);
+            
             var gameSkin = new GameSkin()
             {
                 BackgroundImage = background,
                 BackgroundImageLayout = ImageLayout.Stretch,
-                Cursor = Cursors.Hand
+                
             };
 
             Application.Run(gameSkin);

@@ -15,10 +15,12 @@ namespace HitTheCoconut
         private readonly IScore score;
         private readonly IRepository<string> fruitsRepository;
         private readonly IFruitFactory<string> fruitFactory;
+        private bool IsGameStarted;
         public GameSkin()
         {
             fruitBoxes = new List<FruitPictureBox>();
             this.score = new Score();
+            this.IsGameStarted = false;
             this.fruitsRepository = new FruitNamesRepository();
             this.fruitsRepository
                 .Seed("apricot",
@@ -34,6 +36,7 @@ namespace HitTheCoconut
 
             fruitFactory = new FruitFactory();
             InitializeComponent();
+
 
         }
 
@@ -88,7 +91,7 @@ namespace HitTheCoconut
         private void PlayBtn_MouseEnter(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            
+
             btn.Width += 30;
             btn.Height += 20;
         }
@@ -112,7 +115,9 @@ namespace HitTheCoconut
             this.ChangeFruitsLabelContent();
             this.GameTimer.Start();
             this.PlayBtn.Enabled = true;
+            this.PauseBtn.Enabled = true;
             this.ReplayBtn.Enabled = true;
+            this.IsGameStarted = true;
 
         }
 
@@ -123,6 +128,7 @@ namespace HitTheCoconut
             btn.Enabled = false;
             this.PlayBtn.Enabled = true;
             DisableAllFruitBoxes();
+            this.IsGameStarted = false;
         }
 
         private void PlayBtn_Click(object sender, EventArgs e)
@@ -132,12 +138,13 @@ namespace HitTheCoconut
             btn.Enabled = false;
             this.PauseBtn.Enabled = true;
             EnableAllFruitBoxes();
+            this.IsGameStarted = true;
 
         }
 
         private void CreateFruitBox()
         {
-            var fruit = fruitFactory.CreateRandomFruit((IRandomItemGiver<string>) fruitsRepository);
+            var fruit = fruitFactory.CreateRandomFruit((IRandomItemGiver<string>)fruitsRepository);
             FruitPictureBox fruitPicBox = new FruitPictureBox(fruit);
 
             fruitPicBox.SetBoxConfigurations(this.ClientSize.Width, this.ClientSize.Height);
@@ -146,7 +153,7 @@ namespace HitTheCoconut
 
             fruitBoxes.Add(fruitPicBox);
             this.Controls.Add(fruitPicBox);
-            
+
         }
 
         private void FruitPicBox_Click(object? sender, EventArgs e)
@@ -156,10 +163,10 @@ namespace HitTheCoconut
             IFruit fruit = fruitBox.Fruit;
 
             int points = fruit.Points;
-            
+
             this.score.AddPoints(points);
 
-            if(this.score.TotalScore < -100)
+            if (this.score.TotalScore < -100)
             {
                 GameOver("Sorry! Your score is under -100. Good luck next time!");
             }
@@ -173,6 +180,7 @@ namespace HitTheCoconut
 
         private void TimerEvent(object sender, EventArgs e)
         {
+
             CreateFruitBox();
             this.ChangeFruitsLabelContent();
 
@@ -186,7 +194,10 @@ namespace HitTheCoconut
 
         private void GameSkin_Click(object sender, EventArgs e)
         {
-            this.score.AddPoints(-5);
+            if (this.IsGameStarted)
+            {
+                this.score.AddPoints(-5);
+            }
 
             if (this.score.TotalScore < -100)
             {
@@ -208,6 +219,7 @@ namespace HitTheCoconut
                 }
                 this.fruitBoxes.Clear();
                 this.ChangeFruitsLabelContent();
+                this.PlayBtn.Enabled = true;
 
             }
         }
@@ -230,13 +242,13 @@ namespace HitTheCoconut
 
         private void ChangeFruitsLabelContent()
         {
-            this.FruitCounter.Text =  $"Fruits: {this.fruitBoxes.Count}";
+            this.FruitCounter.Text = $"Fruits: {this.fruitBoxes.Count}";
 
-            if(fruitBoxes.Count > 50)
+            if (fruitBoxes.Count > 50)
             {
                 this.FruitCounter.ForeColor = Color.Red;
             }
-            else if(fruitBoxes.Count > 25)
+            else if (fruitBoxes.Count > 25)
             {
                 this.FruitCounter.ForeColor = Color.Orange;
             }
