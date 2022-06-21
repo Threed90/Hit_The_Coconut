@@ -14,7 +14,7 @@ namespace GameObjects.Utils
         public IFruit CreateFruit(string name)
         {
             var assembly = Assembly.GetCallingAssembly();
-            var type = assembly.GetTypes().FirstOrDefault(t => t.Name.ToLower() == name);
+            var type = assembly.GetTypes().FirstOrDefault(t => t.Name.ToLower() == name.ToLower());
 
             var fruit = (IFruit)Activator.CreateInstance(type);
 
